@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/converter_main"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#f45642"
+    tools:context="com.example.android.cryptoconvert.CurrencyConverter"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#f45642">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/bitcoin_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/btc"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/bitcoin_edit_text"
+                    android:background="#ffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:imeOptions="actionDone"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/bitcoin_text"
+                    android:layout_margin="8dp"
+                    android:inputType="numberDecimal" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/currency_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    tools:text="NGN"/>
+
+                <EditText
+                    android:id="@+id/currency_edit_text"
+                    android:background="#ffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/currency_text"
+                    android:layout_margin="8dp"
+                    android:inputType="numberDecimal" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ethereum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eth"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ethereum_edit_text"
+                    android:background="#ffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/ethereum_text"
+                    android:layout_margin="8dp"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionDone"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/currency_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    tools:text="NGN"/>
+
+
+                <EditText
+                    android:id="@+id/currency_edit_text2"
+                    android:background="#ffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/currency_text2"
+                    android:layout_margin="8dp"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionDone"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

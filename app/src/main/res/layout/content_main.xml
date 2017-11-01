@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.cryptoconvert.MainActivity"
+    tools:showIn="@layout/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/error_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="invisible"/>
+
+    <!-- Loading indicator for user feedback between queries to server -->
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
+
+
